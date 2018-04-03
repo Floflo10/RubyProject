@@ -4,8 +4,4 @@
     <option name="languageLevel" value="ES6" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="ruby-2.5.0-p0" project-jdk-type="RUBY_SDK" />
-  <component name="VagrantProjectSettings">
-    <option name="instanceFolder" value="" />
-    <option name="provider" value="hyperv" />
-  </component>
 </project>
