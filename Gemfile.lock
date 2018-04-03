@@ -57,8 +57,11 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    mysql2 (0.4.10)
     mysql2 (0.4.10-x86-mingw32)
     nio4r (2.3.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.2-x86-mingw32)
       mini_portile2 (~> 2.3.0)
     puma (3.11.3)
@@ -107,6 +110,7 @@ GEM
     websocket-extensions (0.1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  destination: MyString
+  duree: 1
+  budget: 1
+  recit: MyText
+
+two:
+  id: 1
+  destination: MyString
+  duree: 1
+  budget: 1
+  recit: MyText
