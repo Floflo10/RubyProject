@@ -1,2 +1,0 @@
-class Voyage < ApplicationRecord
-end
