@@ -7,7 +7,7 @@ class CreateTrips < ActiveRecord::Migration[5.1]
       t.integer :cost
       t.text :story
       t.references :user, foreign_key: true
-      t.references :theme
+      t.references :theme, foreign_key: true
 
       t.timestamps
     end

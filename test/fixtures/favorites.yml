@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  destination: MyString
+  duration: 1
+  budget: 1
+  story: MyText
+  idUser: one
+  idTheme: one
+
+two:
+  id: 1
+  destination: MyString
+  duration: 1
+  budget: 1
+  story: MyText
+  idUser: two
+  idTheme: two
