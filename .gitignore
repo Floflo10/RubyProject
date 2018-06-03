@@ -17,3 +17,7 @@
 /yarn-error.log
 
 .byebug_history
+
+.env # ajouter à la fin
+/config/database.yml
+/public/uploads/tmp # pour carrierwave plus tard

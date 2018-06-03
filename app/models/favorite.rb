@@ -1,4 +1,6 @@
 class Favorite < ApplicationRecord
   belongs_to :user
-  belongs_to :travel
+  has_many :travel
+
+  validates :user, :travel, presence: true
 end

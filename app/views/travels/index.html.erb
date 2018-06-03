@@ -1,0 +1,10 @@
+<h1>Tous les voyages de nos abonnées</h1>
+
+<%- @travels.each do |travel| -%>
+  <section>
+    <h2><%= link_to(travel.title, travel_path(travel)) %></h2>
+    <p><%= travel.destination %></p>
+    <p><%= travel.duration %></p>
+    <%= image_tag("http://placehold.id/300x200") %>
+  </section>
+<% end %>

@@ -10,48 +10,47 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180417180940) do
+ActiveRecord::Schema.define(version: 20180521131253) do
 
   create_table "favorites", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id"
-    t.bigint "trip_id"
+    t.bigint "travel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["trip_id"], name: "index_favorites_on_trip_id"
+    t.index ["travel_id"], name: "index_favorites_on_travel_id"
     t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "pictures", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "url"
-    t.bigint "trip_id"
+    t.bigint "travel_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["trip_id"], name: "index_pictures_on_trip_id"
+    t.index ["travel_id"], name: "index_pictures_on_travel_id"
   end
 
-  create_table "themes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "topics", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
-    t.string "genre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "trips", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "goal"
-    t.integer "time"
-    t.integer "cost"
-    t.text "story"
-    t.bigint "user_id"
-    t.bigint "theme_id"
+  create_table "travels", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "title"
+    t.string "destination"
+    t.string "duration"
+    t.string "deal"
+    t.string "story"
+    t.string "narrative"
+    t.bigint "topic_id"
+    t.integer "like"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["theme_id"], name: "index_trips_on_theme_id"
-    t.index ["user_id"], name: "index_trips_on_user_id"
+    t.string "photo"
+    t.index ["topic_id"], name: "index_travels_on_topic_id"
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -62,13 +61,14 @@ ActiveRecord::Schema.define(version: 20180417180940) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "favorites", "trips"
+  add_foreign_key "favorites", "travels"
   add_foreign_key "favorites", "users"
-  add_foreign_key "pictures", "trips"
-  add_foreign_key "trips", "themes"
-  add_foreign_key "trips", "users"
+  add_foreign_key "pictures", "travels"
+  add_foreign_key "travels", "topics"
 end

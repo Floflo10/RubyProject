@@ -1,0 +1,24 @@
+<!--
+@Author: Ismael Hadj
+@Date:   2018-05-21T11:27:04+02:00
+@Email:  Ismael.hadj13@yahoo.com
+@Last modified by:   Ismael Hadj
+@Last modified time: 2018-05-21T14:57:25+02:00
+-->
+
+
+
+<h1>InsertRecit#insert</h1>
+<p>Find me in app/views/insert_recit/insert.html.erb</p>
+
+<%= form_tag "/insert_recit", method: "post" do %>
+  <input type="text" name="destination" placeholder="destination" />
+  <input type="text" name="theme" placeholder="theme" />
+  <input type="text" name="duree" placeholder="durée" />
+  <input type="text" name="budget" placeholder="budget" />
+  <input type="text" name="recit" placeholder="récit" />
+  <input type="text" name="bonplans" placeholder="bons plans" />
+  <input type="text" name="anecdotes" placeholder="anecdotes" />
+  <input type="file" name="image" />
+  <input type="submit" value="Ajouter un récit" />
+<% end %>

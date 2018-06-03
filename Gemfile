@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use mysql as the database for Active Record
-gem 'mysql2'
+gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -18,15 +18,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-# Gemfile
-gem 'jquery-rails'
-gem 'bootstrap-sass'
-gem 'font-awesome-sass'
-gem 'dotenv-rails'
-
-gem 'devise', '~> 4.4'
-gem 'devise-i18n'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -53,10 +44,37 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'binding_of_caller'
-  gem 'pry-byebug'
-  gem 'pry-rails'
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'jquery-rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'dotenv-rails'
+
+# Gemfile
+gem 'devise', '~> 4.4'
+
+# pour gérer la traduction des forms :
+gem 'devise-i18n'
+
+gem 'cloudinary', '~> 1.8', '>= 1.8.3'
+gem 'carrierwave'
+
+gem 'devise', '~> 4.4'
+
+# pour gerer la traduction des forms:
+gem 'devise-i18n'
+
+gem 'simple_form'
+
+group :development do
+  gem 'binding_of_caller'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+end

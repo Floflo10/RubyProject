@@ -1,3 +1,11 @@
+# @Author: CYRIL VELLA
+# @Date:   2018-05-21T10:46:10+02:00
+# @Email:  cyril.vella@yahoo.com
+# @Last modified by:   CYRIL VELLA
+# @Last modified time: 2018-05-21T14:38:17+02:00
+
+
+
 # MySQL. Versions 5.1.10 and up are supported.
 #
 # Install the MySQL driver
@@ -14,25 +22,25 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password:
+  password: root
   host: localhost
 
 development:
   <<: *default
-  database: rubyproject_development
+  database: travelinspire_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: RubyProject_test
+  database: travelinspire_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
 #
-# Instead, provide the password as a unix environment variable when you boot
+# -Instead, provide the password as a unix environment variable when you boot
 # the app. Read http://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full rundown on how to provide these environment variables in a
 # production deployment.
@@ -49,6 +57,6 @@ test:
 #
 production:
   <<: *default
-  database: RubyProject_production
-  username: RubyProject
-  password: <%= ENV['RUBYPROJECT_DATABASE_PASSWORD'] %>
+  database: travelinspire_production
+  username: travelinspire
+  password: <%= ENV['TRAVELINSPIRE_DATABASE_PASSWORD'] %>
