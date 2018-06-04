@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20180521131253) do
 
   create_table "favorites", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id"
-    t.bigint "travel_id"
+    t.bigint "travel_identification"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["travel_id"], name: "index_favorites_on_travel_id"
