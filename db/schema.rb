@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20180521131253) do
     t.string "title"
     t.string "destination"
     t.string "duration"
+    t.string "deal"
     t.string "story"
     t.string "narrative"
     t.bigint "topic_id"
