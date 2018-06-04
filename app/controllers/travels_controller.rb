@@ -25,7 +25,6 @@ class TravelsController < ApplicationController
       @travel.save!
       redirect_to travel_path(@travel)
     else
-      # réaffiche le template new pour avoir formulaire + erreurs
       render :new
     end
   end

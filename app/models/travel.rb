@@ -9,6 +9,5 @@
 class Travel < ApplicationRecord
   has_many :topic
   mount_uploader :photo, PictureUploader
-  # rajouter :topic une fois les topic gerer
   validates :title, :narrative, :duration, :destination, :photo, presence: true
 end
