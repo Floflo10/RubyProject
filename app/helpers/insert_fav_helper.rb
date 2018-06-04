@@ -1,0 +1,2 @@
+module InsertFavHelper
+end
