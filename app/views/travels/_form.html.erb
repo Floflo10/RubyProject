@@ -8,29 +8,17 @@
 
 
 
-<!--<div class="row">-->
-<!--  <div class="col-sm-8 col-sm-offset-2">-->
-    <%#= simple_form_for (travel) do |form| %>
-      <%#= form.input :title%>
-      <%#= form.input :destination%>
-      <%#= form.input :deal%>
-      <%#= form.input :deal%>
-      <%#= form.input :story%>
-      <%#= form.input :narrative%>
-      <%#= form.file_field :photo%>
-      <%#= form.button :submit %>
-    <%# end %>
-<!--  </div>-->
-<!--</div>-->
-
-<%= form_tag "/insert_recit", method: "post" do %>
-  <input type="text" name="destination" placeholder="destination" />
-  <input type="text" name="theme" placeholder="theme" />
-  <input type="text" name="duree" placeholder="durée" />
-  <input type="text" name="budget" placeholder="budget" />
-  <input type="text" name="recit" placeholder="récit" />
-  <input type="text" name="bonplans" placeholder="bons plans" />
-  <input type="text" name="anecdotes" placeholder="anecdotes" />
-  <input type="file" name="image" />
-  <input type="submit" value="Ajouter un récit" />
-<% end %>
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <%= simple_form_for (travel) do |form| %>
+      <%= form.input (:title, "TITRE")%>
+      <%= form.input :destination%>
+      <%= form.input :deal%>
+      <%= form.input :deal%>
+      <%= form.input :story%>
+      <%= form.input :narrative%>
+      <%= form.file_field :photo%>
+      <%= form.button :submit %>
+    <% end %>
+  </div>
+</div>
