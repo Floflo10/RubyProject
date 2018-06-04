@@ -11,6 +11,9 @@
 <div class="travels">
   <h1><%= @travel.title %></h1>
 
+  <%= cl_image_tag @travel.photo, width: 300, height: 200,
+                   crop: :fill %>
+
   <%= render "travels/button_list" %>
   <%= render "travels/button_list_favo" %>
 

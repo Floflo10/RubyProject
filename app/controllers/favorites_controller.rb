@@ -1,7 +1,7 @@
 class FavoritesController < ApplicationController
 
   def index
-    @travels = Favorite.all
+    @favorite = Favorite.all
   end
 
   def new
