@@ -1,18 +1,8 @@
-<!--
-@Author: Ismael Hadj
-@Date:   2018-05-21T14:06:44+02:00
-@Email:  Ismael.hadj13@yahoo.com
-@Last modified by:   Ismael Hadj
-@Last modified time: 2018-05-21T16:39:01+02:00
--->
-
-
 
 <div class="travels">
   <h1><%= @travel.title %></h1>
 
-  <%= cl_image_tag @travel.photo, width: 300, height: 200,
-                   crop: :fill %>
+  <%= cl_image_tag @travel.photo, width: 800, height: 400, crop: :fill %>
 
   <%= render "travels/button_list" %>
   <%= render "travels/button_list_favo" %>
