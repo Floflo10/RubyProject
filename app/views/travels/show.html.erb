@@ -4,12 +4,13 @@
 
   <%= cl_image_tag @travel.photo, width: 800, height: 400, crop: :fill %>
 
-  <%= render "travels/button_list" %>
-  <%= render "travels/button_list_favo" %>
-
   <section class="row travel">
     <div class="col-sm-8">
       <p>Ville: <%= @travel.title %></p>
     </div>
   </section>
+
+  <%= render "travels/button_list" %>
+  <%= render "travels/button_list_favo" %>
+
 </div>
