@@ -82,8 +82,8 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/travels/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -563,7 +563,7 @@
       <workItem from="1528033206011" duration="58000" />
       <workItem from="1528034006115" duration="286000" />
       <workItem from="1528034492936" duration="11113000" />
-      <workItem from="1528097093859" duration="5459000" />
+      <workItem from="1528097093859" duration="6124000" />
     </task>
     <task id="LOCAL-00001" summary="Trips + Pictures">
       <created>1522766512601</created>
@@ -656,11 +656,25 @@
       <option name="project" value="LOCAL" />
       <updated>1528122917081</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Nul">
+      <created>1528123166512</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1528123166512</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Nul">
+      <created>1528123707775</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1528123707775</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45824000" />
+    <option name="totallyTimeSpent" value="46489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -703,7 +717,8 @@
     <MESSAGE value="Cloud" />
     <MESSAGE value="Clean" />
     <MESSAGE value="Resolution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolution" />
+    <MESSAGE value="Nul" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nul" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/controllers/travels_controller.rb">
@@ -962,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/travels/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>

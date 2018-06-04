@@ -12,11 +12,11 @@
   <div class="col-sm-8 col-sm-offset-2">
     <%= simple_form_for (travel) do |form| %>
       <%= form.input :title, label: 'Titre'%>
-      <%= form.input :destination%>
-      <%= form.input :deal%>
-      <%= form.input :deal%>
-      <%= form.input :story%>
-      <%= form.input :narrative%>
+      <%= form.input :destination, label: 'Destination'%>
+      <%= form.input :duration, label: 'Durée'%>
+      <%= form.input :deal, label: 'Bon Plan'%>
+      <%= form.input :story, label: 'Histoire'%>
+      <%= form.input :narrative, label: 'Annecdot'%>
       <%= form.file_field :photo%>
       <%= form.button :submit %>
     <% end %>
