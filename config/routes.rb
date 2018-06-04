@@ -8,6 +8,7 @@
 
 Rails.application.routes.draw do
   get 'insert_fav/create'
+  post 'insert_fav' => 'favorites#create'
 
   get 'insert_recit/insert'
   post 'insert_recit' => 'travels#create'
