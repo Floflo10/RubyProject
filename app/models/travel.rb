@@ -9,5 +9,5 @@
 class Travel < ApplicationRecord
   has_many :topic
   mount_uploader :photo, PictureUploader
-  validates :title, :narrative, :duration, :destination, :photo, presence: true
+  validates :title, :story, :duration, :destination, :photo, presence: true
 end

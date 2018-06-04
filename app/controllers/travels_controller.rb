@@ -32,7 +32,7 @@ class TravelsController < ApplicationController
   private
 
   def travel_params
-    params.require(:travel).permit(:title, :destination, :duration, :narrative, :photo)
+    params.require(:travel).permit(:title, :destination, :duration, :deal, :story, :narrative, :photo)
   end
   def load_image(name)
     filepath = Rails.root.join("db", "imgs", name)
